@@ -47,7 +47,7 @@ const Integrantes = () => {
         <TeamMemberCard
           name="Aline Lourenço Carvalho"
           rm="RM: 564538"
-          turma="Turma: 1TDSPH"
+          turma="Turma: 1TDSPK"
           image="/img/foto-aline.jpeg" 
           github="https://github.com/LibaLourenco"
           linkedin="https://www.linkedin.com/in/aline-louren%C3%A7o-carvalho/"
