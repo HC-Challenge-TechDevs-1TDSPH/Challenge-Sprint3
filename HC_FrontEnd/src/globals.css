@@ -36,3 +36,19 @@
       "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
+  /* ==========================================================================
+   ESTILOS GERAIS
+   ========================================================================== */
+
+  .page-container,
+  .main-container,
+  .header .header-container,
+  .footer .footer-container,
+  .features-grid,
+  .accessibility-bar .accessibility-bar-container {
+    @apply w-full h-full p-4;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold text-center text-[color:var(--hc-blue)] mb-12;
+  }  
