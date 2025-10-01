@@ -261,3 +261,64 @@
   .faq-list .faq-answer-wrapper .faq-answer-text {
     @apply text-[color:var(--color-text-secondary)] leading-[1.75];
   }  
+  /* ==========================================================================
+   CONTATO
+   ========================================================================== */
+  .contato-container {
+    @apply max-w-screen-lg grid gap-8 grid-cols-[1fr] mx-auto;
+  }
+  @media (min-width: 1024px) {
+    .contato-container {
+      @apply grid-cols-[2fr_1fr];
+      align-items: start;
+    }
+  }
+  .contact-form {
+    @apply bg-[color:var(--color-card)] border border-[color:var(--color-border)] shadow-lg p-8 rounded-xl border-solid;
+  }
+  @media (min-width: 640px) {
+    .contact-form {
+      @apply p-10;
+    }
+  }
+  .contact-form .form-group {
+    @apply mb-6;
+  }
+  .contact-form label {
+    @apply block text-sm font-medium text-[color:var(--color-text-secondary)] mb-2;
+  }
+  .contact-form .form-input,
+  .contact-form .form-textarea {
+    @apply w-full border border-[color:var(--color-border)] bg-[color:var(--color-bg)] text-[color:var(--color-text-primary)] transition-[border-color] duration-[0.3s,box-shadow] delay-[0.3s] px-4 py-3 rounded-lg border-solid;
+    outline: none;
+  }
+  .contact-form .form-input:focus,
+  .contact-form .form-textarea:focus {
+    @apply border-[color:var(--hc-blue)] shadow-[0_0_0_3px_rgba(0,116,204,0.3)];
+  }
+  .contact-form .form-textarea {
+    @apply resize-y min-h-[140px];
+  }
+  .contact-form .submit-button {
+    @apply inline-flex items-center justify-center gap-2 w-full bg-[color:var(--hc-blue)] text-[white] font-semibold text-base cursor-pointer transition-[background-color] duration-[0.3s] px-8 py-3.5 rounded-lg border-[none] hover:bg-[color:var(--hc-blue-dark)];
+  }
+  .contact-info-card {
+    @apply bg-[color:var(--color-card)] border border-[color:var(--color-border)] shadow-[0_4px_6px_-1px_rgb(0_0_0_/_0.1)] flex flex-col gap-6 p-8 rounded-xl border-solid;
+  }
+  @media (min-width: 640px) {
+    .contact-info-card {
+      @apply p-10;
+    }
+  }
+  .contact-info-card .contact-info-item {
+    @apply flex items-start text-left gap-4;
+  }
+  .contact-info-card svg {
+    @apply w-5 h-5 text-[color:var(--hc-blue)] shrink-0 mt-1;
+  }
+  .contact-info-card .contact-info-content .contact-info-label {
+    @apply font-semibold text-[color:var(--color-text-primary)];
+  }
+  .contact-info-card .contact-info-content .contact-info-value {
+    @apply text-[color:var(--color-text-secondary)];
+  }  
