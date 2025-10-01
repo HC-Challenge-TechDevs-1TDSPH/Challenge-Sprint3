@@ -227,3 +227,37 @@
   .dark .integrantes-grid .integrante-socials svg {
     @apply text-gray-400;
   } 
+  /* ==========================================================================
+   FAQ
+   ========================================================================== */
+  .faq-list {
+    @apply flex flex-col gap-4 max-w-4xl mx-auto;
+  }
+  .faq-list .faq-item {
+    @apply bg-[color:var(--color-card)] border border-[color:var(--color-border)] shadow-sm transition-[margin] duration-[0.3s] rounded-lg border-solid;
+  }
+  .faq-list .faq-item:has(.faq-question-button[aria-expanded="true"]) {
+    @apply border-[color:var(--hc-blue-dark)] mx-0 my-6;
+  }
+  .faq-list .faq-question-button {
+    @apply w-full text-left flex items-center justify-between cursor-pointer text-base px-6 py-5 border-[none];
+    background: none;
+  }
+  .faq-list .faq-question-button .faq-question-content {
+    @apply flex items-center;
+  }
+  .faq-list .faq-question-button .faq-icon {
+    @apply text-[color:var(--hc-blue-dark)] transition-transform duration-[0.3s] ease-[ease-in-out] mr-4;
+  }
+  .faq-list .faq-question-button[aria-expanded="true"] .faq-icon {
+    @apply rotate-90;
+  }
+  .faq-list .faq-question-button .faq-question-text {
+    @apply font-semibold text-lg text-[color:var(--color-text-primary)];
+  }
+  .faq-list .faq-answer-wrapper {
+    @apply pl-14 pr-6 pt-0 pb-5;
+  }
+  .faq-list .faq-answer-wrapper .faq-answer-text {
+    @apply text-[color:var(--color-text-secondary)] leading-[1.75];
+  }  
