@@ -40,4 +40,4 @@ HC_FrontEnd/
 👉 https://youtu.be/D-0reLe2JuE
 
 🔗 Links Importantes
-Repositório no GitHub: https://github.com/HC-Challenge-TechDevs-1TDSPH/Challenge_Sprint3.git
+Repositório no GitHub: https://github.com/HC-Challenge-TechDevs-1TDSPH/Challenge-Sprint3.git
