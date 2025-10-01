@@ -197,3 +197,33 @@
   .about-section .about-container p {
     @apply text-lg text-[color:var(--color-text-secondary)] leading-[1.75] max-w-screen-md mx-auto my-0;
   }  
+  /* ==========================================================================
+   INTEGRANTES
+   ========================================================================== */
+  .integrantes-grid {
+    @apply flex flex-col gap-12 max-w-2xl mx-auto;
+  }
+  .integrantes-grid .integrante-card {
+    @apply flex flex-col items-center text-center bg-[color:var(--color-card)] shadow-md border border-[color:var(--color-border)] p-8 rounded-xl border-solid;
+  }
+  .integrantes-grid .integrante-image-wrapper {
+    @apply w-40 h-48 overflow-hidden shadow-lg border-[color:var(--hc-blue)] mb-6 rounded-[50%] border-4 border-solid;
+  }
+  .integrantes-grid .integrante-image {
+    @apply w-full h-full object-cover;
+  }
+  .integrantes-grid .integrante-info h2 {
+    @apply text-2xl font-bold text-[color:var(--hc-blue)] mb-1;
+  }
+  .integrantes-grid .integrante-info p {
+    @apply text-[color:var(--color-text-secondary)];
+  }
+  .integrantes-grid .integrante-socials {
+    @apply flex gap-6 mt-6;
+  }
+  .integrantes-grid .integrante-socials svg {
+    @apply text-3xl text-gray-600 transition-[color] duration-[0.3s,transform] delay-[0.3s] hover:text-[color:var(--hc-blue)] hover:scale-110;
+  }
+  .dark .integrantes-grid .integrante-socials svg {
+    @apply text-gray-400;
+  } 
