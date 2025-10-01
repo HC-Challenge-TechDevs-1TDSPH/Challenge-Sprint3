@@ -7,7 +7,7 @@ Este repositório contém o desenvolvimento do **Front-End** do projeto **HC**, 
 ## 👥 Integrantes
 - Felipe Monte de Sousa – RM 562019 – Turma 1TDSPH
 - Luna de Carvalho Guimarães – RM 562290 – Turma 1TDSPH
-- Aline Lourenço Carvalho – RM 564538 – Turma 1TDSPH
+- Aline Lourenço Carvalho – RM 564538 – Turma 1TDSPK
 
 ---
 
