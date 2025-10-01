@@ -322,3 +322,67 @@
   .contact-info-card .contact-info-content .contact-info-value {
     @apply text-[color:var(--color-text-secondary)];
   }  
+  /* ==========================================================================
+   COMPONENTES PERSONALIZADOS
+   ========================================================================== */
+  .notification-toast {
+    @apply fixed bg-[#28a745] text-[white] shadow-[0_4px_12px_rgba(0,0,0,0.15)] z-[1000] opacity-0 translate-x-full invisible transition-all duration-[0.4s] ease-[ease-in-out] px-6 py-4 rounded-lg right-8 top-8;
+  }
+  .notification-toast.show {
+    @apply opacity-100 translate-x-0 visible;
+  }
+  /* ==========================================================================
+   SOLUÇÃO / VÍDEOS
+   ========================================================================== */
+  .solucao-header {
+    @apply max-w-4xl text-center mt-0 mb-12 mx-auto;
+  }
+  .solucao-header h1 {
+    @apply text-4xl font-bold text-[color:var(--color-text-primary)] mb-4;
+  }
+  .solucao-header p {
+    @apply text-lg text-[color:var(--color-text-secondary)] leading-[1.75];
+  }
+  .video-grid {
+    @apply grid gap-8 grid-cols-[1fr];
+  }
+  @media (min-width: 768px) {
+    .video-grid {
+      @apply grid-cols-[repeat(2,1fr)];
+    }
+  }
+  @media (min-width: 1024px) {
+    .video-grid {
+      @apply grid-cols-[repeat(3,1fr)];
+    }
+  }
+  .video-grid .video-card {
+    @apply bg-[color:var(--color-card)] overflow-hidden border border-[color:var(--color-border)] shadow-[0_4px_6px_-1px_rgb(0_0_0_/_0.1)] transition-shadow duration-[0.3s,transform] delay-[0.3s] rounded-xl border-solid hover:translate-y-[-5px] hover:shadow-[0_10px_15px_-3px_rgb(0_0_0_/_0.1)];
+  }
+  .video-grid .video-thumbnail-wrapper {
+    @apply relative cursor-pointer;
+  }
+  .video-grid .video-thumbnail-wrapper .video-thumbnail {
+    @apply w-full h-48 object-cover block;
+  }
+  .video-grid .video-thumbnail-wrapper .video-play-overlay {
+    @apply absolute bg-[rgba(0,0,0,0.3)] flex items-center justify-center opacity-0 transition-opacity duration-[0.3s] inset-0;
+  }
+  .video-grid .video-thumbnail-wrapper:hover .video-play-overlay {
+    @apply opacity-100;
+  }
+  .video-grid .video-thumbnail-wrapper .video-play-button {
+    @apply bg-[#ff0000] text-[white] w-16 h-16 flex items-center justify-center transition-transform duration-[0.3s] rounded-full;
+  }
+  .video-grid .video-thumbnail-wrapper .video-play-button svg {
+    @apply text-2xl ml-[3px];
+  }
+  .video-grid .video-thumbnail-wrapper:hover .video-play-button {
+    @apply scale-110;
+  }
+  .video-grid .video-info {
+    @apply p-6;
+  }
+  .video-grid .video-info h3 {
+    @apply font-semibold text-[color:var(--color-text-primary)] leading-normal;
+  }  
