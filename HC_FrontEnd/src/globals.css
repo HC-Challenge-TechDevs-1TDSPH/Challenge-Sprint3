@@ -129,3 +129,71 @@
   .dark .accessibility-bar .theme-toggle-button svg {
     @apply text-gray-900;
   }  
+  /* ==========================================================================
+   HOME (PÁGINA PRINCIPAL)
+   ========================================================================== */
+  .hero-section {
+    @apply w-full bg-[color:var(--hc-blue)] text-white text-center px-4 py-20;
+  }
+
+  .hero-section h1 {
+    @apply text-4xl font-bold mb-6;
+  }
+
+  .hero-section p {
+    @apply text-xl leading-relaxed mb-8;
+  }
+
+  @media (min-width: 768px) {
+    .hero-section h1 { @apply text-5xl; }
+    .hero-section p  { @apply text-2xl; }
+  }
+
+  .hero-section .hero-button {
+    @apply inline-block bg-white text-[color:var(--hc-blue)] font-semibold text-lg px-8 py-3 rounded-lg hover:bg-gray-200 transition;
+  }
+
+  .features-grid {
+    @apply grid gap-8 w-full;
+  }
+  @media (min-width: 768px) {
+    .features-grid {
+      @apply grid-cols-[repeat(3,1fr)];
+    }
+  }
+  .features-grid .feature-card {
+    @apply bg-[color:var(--color-card)] text-center border border-[color:var(--color-border)] shadow-[0_4px_6px_-1px_rgb(0_0_0_/_0.1)] transition-shadow duration-[0.3s,transform] delay-[0.3s] p-8 rounded-lg border-solid hover:shadow-[0_10px_15px_-3px_rgb(0_0_0_/_0.1)] hover:translate-y-[-5px];
+  }
+  .features-grid .feature-card .feature-card-icon-wrapper {
+    @apply flex items-center justify-center w-16 h-16 bg-[color:var(--hc-blue)] text-[white] mt-0 mb-6 mx-auto rounded-full;
+  }
+  .features-grid .feature-card .feature-card-icon {
+    @apply text-3xl;
+  }
+  .features-grid .feature-card h3 {
+    @apply text-xl font-bold text-[color:var(--color-text-primary)] mb-4;
+  }
+  .features-grid .feature-card p {
+    @apply text-[color:var(--color-text-secondary)] leading-[1.75] mb-6;
+  }
+  .features-grid .feature-card .feature-card-link {
+    @apply inline-block bg-[color:var(--hc-blue)] text-[white] rounded font-medium no-underline transition-[background-color] duration-[0.3s] px-6 py-2 hover:bg-[color:var(--hc-blue-dark)];
+  }
+  /* ==========================================================================
+   ABOUT SECTION (NA PÁGINA HOME)
+   ========================================================================== */
+  .about-section {
+    @apply bg-gray-100 px-4 py-16;
+  }
+  .dark .about-section {
+    @apply bg-gray-900;
+  }
+  .about-section .about-container {
+    @apply bg-[color:var(--color-card)] max-w-4xl text-center border border-[color:var(--color-border)] shadow-lg mx-auto p-10 rounded-xl border-solid;
+  }
+  .about-section .about-container h2 {
+    @apply text-3xl font-bold text-[color:var(--hc-blue)] relative mb-8 pb-4 after:content-[''] after:absolute after:-translate-x-2/4 after:w-20 after:h-[3px] after:bg-[color:var(--hc-blue)] after:rounded-sm after:left-2/4 after:bottom-0;
+  }
+  .about-section .about-container p {
+    @apply text-lg text-[color:var(--color-text-secondary)] leading-[1.75] max-w-screen-md mx-auto my-0;
+  }  
