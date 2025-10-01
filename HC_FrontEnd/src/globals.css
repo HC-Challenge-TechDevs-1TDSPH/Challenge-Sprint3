@@ -52,3 +52,80 @@
   .section-title {
     @apply text-4xl font-bold text-center text-[color:var(--hc-blue)] mb-12;
   }  
+  /* ==========================================================================
+   CABEÇALHO (Cabecalho.tsx)
+   ========================================================================== */
+  .header {
+    @apply w-full bg-[color:var(--hc-blue)] text-white shadow-md;
+  }
+
+  .header .header-container {
+    @apply flex items-center justify-between w-full px-4 py-2;
+  }
+  .header .header-logo {
+    @apply h-14 w-auto;
+  }
+  .nav-desktop {
+    @apply hidden gap-6;
+  }
+  @media (min-width: 768px) {
+    .nav-desktop {
+      @apply flex;
+    }
+  }
+  .nav-mobile {
+    @apply bg-[color:var(--hc-blue-dark)] pb-4;
+  }
+  @media (min-width: 768px) {
+    .nav-mobile {
+      @apply hidden;
+    }
+  }
+  .nav-mobile .nav-mobile-links {
+    @apply flex flex-col items-center gap-4 pt-4;
+  }
+  .nav-link {
+    @apply font-medium transition-[color] duration-[0.3s] no-underline text-[white] hover:text-[color:var(--yellow-300)];
+  }
+  .nav-link.nav-link-active {
+    @apply text-[color:var(--yellow-300)];
+  }
+  .hamburger-button {
+    @apply block w-8 h-6 relative bg-[white] h-[3px] transition-transform duration-[0.5s] ease-[ease-in-out] border-[none] before:-top-2.5 after:top-2.5;
+  }
+  .hamburger-button::before,
+  .hamburger-button::after {
+    @apply content-[''] absolute w-full h-[3px] bg-[white] transition-all duration-[0.3s] ease-[ease-in-out] left-0;
+  }
+  .hamburger-button.open {
+    @apply bg-transparent before:rotate-45 before:top-0 after:-rotate-45 after:top-0;
+  }
+  @media (min-width: 768px) {
+    .hamburger-button {
+      @apply hidden;
+    }
+  }
+  .accessibility-bar {
+    @apply w-full bg-gray-100 border-b border-[color:var(--color-border)];
+  }
+  .dark .accessibility-bar {
+    @apply bg-gray-800;
+  }
+  .accessibility-bar .accessibility-bar-container {
+    @apply flex justify-center items-center gap-4 w-full px-4 py-2;
+  }
+  .accessibility-bar .accessibility-button {
+    @apply bg-[color:var(--hc-blue)] text-[white] w-10 rounded text-sm font-bold transition-[background-color] duration-[0.3s] cursor-pointer px-0 py-1 border-[none] hover:bg-[color:var(--hc-blue)];
+  }
+  .accessibility-bar .theme-toggle-button {
+    @apply flex items-center bg-[color:var(--hc-blue)] text-[white] rounded text-sm transition-[background-color] duration-[0.3s] cursor-pointer px-3 py-1 border-[none];
+  }
+  .accessibility-bar .theme-toggle-button svg {
+    @apply w-4 h-4 text-[color:var(--yellow-300)] mr-2;
+  }
+  .dark .accessibility-bar .theme-toggle-button {
+    @apply bg-[color:var(--yellow-300)] text-gray-900;
+  }
+  .dark .accessibility-bar .theme-toggle-button svg {
+    @apply text-gray-900;
+  }  
