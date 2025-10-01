@@ -386,3 +386,36 @@
   .video-grid .video-info h3 {
     @apply font-semibold text-[color:var(--color-text-primary)] leading-normal;
   }  
+  /* ==========================================================================
+   RODAPÉ
+   ========================================================================== */
+  .footer {
+    @apply w-full bg-[color:var(--hc-blue)] text-white;
+  }
+
+  .footer .footer-container {
+    @apply flex flex-col items-center justify-between w-full px-4 py-8;
+  }
+  @media (min-width: 768px) {
+    .footer .footer-container {
+      @apply flex-row;
+    }
+  }
+  .footer .footer-copyright {
+    @apply text-sm mb-4;
+  }
+  @media (min-width: 768px) {
+    .footer .footer-copyright {
+      @apply mb-0;
+    }
+  }
+  .footer .footer-socials {
+    @apply flex gap-4;
+  }
+  .footer .footer-social-link svg {
+    @apply w-6 h-6 text-[white] transition-transform duration-[0.3s];
+  }
+  .footer .footer-social-link:hover svg {
+    @apply scale-[1.2];
+  }
+}  
